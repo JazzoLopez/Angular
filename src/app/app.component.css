@@ -1,0 +1,8 @@
+:root { /*pseudo elemento de raiz, por encima de casi todo, se refiere al documento como al todo o raiz, por eso va hasta arriba de preferencia*/
+    color-scheme: light dark; /*Modo oscuro a nivel de navegador*/
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
