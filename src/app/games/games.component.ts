@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-games',
@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
   <ul>
+    <h3>Los juegos favoritos de {{username}}</h3>
     @for (game of games; track game.id) {
       <li>{{ game.name }}</li>
     }
@@ -14,6 +15,8 @@ import { Component } from '@angular/core';
   styleUrl: './games.component.css'
 })
 export class GamesComponent {
+@Input() username="";
+
 games = [
   {
     id:1,
