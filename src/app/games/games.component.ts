@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
   template: `
   <ul>
     <h3>Los juegos favoritos de {{username}}</h3>
-    @for (game of games; track game.id) {
+    @for (game of games; track game.id) { //Iterando el array de juegos para mostrarlos
       <li>{{ game.name }}</li>
     }
   </ul>
@@ -16,7 +16,8 @@ import { Component, Input } from '@angular/core';
 })
 export class GamesComponent {
 @Input() username="";
-
+ 
+//Mandando un array para mostrarlo
 games = [
   {
     id:1,
